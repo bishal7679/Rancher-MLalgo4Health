@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mlalgoapp
+  name: mlalgoapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mlalgoapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mlalgoapp
+    spec:
+      containers:
+      - image: bishal7679/mlalgo4health:2.0
+        name: myhealthcareapp
+        ports:
+        - containerPort: 8501
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-service
+  labels: 
+    app: lb-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8503
+    targetPort: 8501
+  selector:
+    app: mlalgoapp
