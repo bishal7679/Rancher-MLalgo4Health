@@ -1,17 +1,13 @@
-# ML-Healthcare-Web-App
+# ML Analysis In Healthcare App
 
-This is an interactive Machine Learning Web App "ML in Healthcare" developed using Python and StreamLit. It uses ML algorithms to build powerful and accurate models to predict the risk (High / Low) of the user of having a Heart Attack or Breast Cancer based on the user's specific attributes like age, sex, heart rate, blood sugar, etc.
+This is an interactive Machine Learning Web App "ML in Healthcare" developed using Python and StreamLit. It uses differnet ML algorithms to build powerful and accurate models to predict the risk (High / Low) of the user of having a Heart Attack or Breast Cancer based on the user's specific attributes like age, sex, heart rate, blood sugar, etc.
 
-<h2><b> <a href="https://share.streamlit.io/shivamkc01/ML_in_healthcare_app-/main/ML_Healthcare.py" target="_blank">View App Here: </a>
-</b></h2>
-<hr>
+The app can be visited at https://ml-healthcare-streamlit.herokuapp.com/
 
-This applications has two basic sections:
-
-<h2>1) - Model Building </h2>
-In this section 7 different models are built using different ML algorithms. They are: 
-
-```
+# About the App
+The app has 2 major sections, first being Model Building.
+In this section 7 different models are built using different ML algorithms. They are:
+```ruby
 1. Logistic Regression 
 2. KNN
 3. SVM 
@@ -20,16 +16,16 @@ In this section 7 different models are built using different ML algorithms. They
 6. Gradient Boosting 
 7. XGBoost
 ```
-The models are trained using data from https://archive.ics.uci.edu/ml/index.php, particularly the [Heart Attack Prediction](https://github.com/shivamkc01/ML_in_healthcare_app-/blob/main/Data/heart.csv) and [Breast Cancer (Wisconsin)](https://github.com/shivamkc01/ML_in_healthcare_app-/blob/main/Data/BreastCancer.csv) datasets.
+   
+An interactive side-dashboard is created using the streamlit st.sidebar call which enables the user to do the following:
 
-An interactive side-dashboard is created using the streamlit `st.sidebar` call which enables the user to do the following:
-1. Choose dataset - `Heart Attack / Breast Cancer`
-2. Choose algorithm - `Logistic Regression , KNN , SVM , Decision Trees , Random Forest , Gradient Boosting , XGBoost.`
-3. Change the important parameters for each model - `Learning Rate, Random State, Regularization Coeff, Gamma, Kernel, n_estimators` etc. 
+- Choose dataset - `Heart Attack / Breast Cancer`
 
-After training using the parameters selected by the user, the tuned model is built and ready to be tested on our testing data. The classification plot and confusion matrix is displayed for the model selected along with the model metrics: `Accuracy, Precision, Recall, F1-Score, Mean Squared Error, Execution Time`. The user can observe real-time changes in the plots and metrics as they change the model parameters further. 
-> **This is a great way to understand the different ML algorithms and how they are influenced by tuning the hyperparameters.**
-> 
+- Choose algorithm - `Logistic Regression` , `KNN` , `SVM` , `Decision Trees` , `Random Forest` , `Gradient Boosting` , `XGBoost`.
+
+- Change the important parameters for each model - Learning Rate, Random State, Regularization Coeff, Gamma, Kernel, n_estimators etc.
+
+After training using the parameters selected by the user, the tuned model is built and ready to be tested on our testing data. The classification plot and confusion matrix is displayed for the model selected along with the model metrics: Accuracy, Precision, Recall, F1-Score, Mean Squared Error, Execution Time. The user can observe real-time changes in the plots and metrics as they change the model parameters further.
 
 The 7 models (optimum tuning) performed as follows: <br>
 `Criterion: Accuracy`
@@ -43,17 +39,31 @@ Random Forest | **90.164% / 98.24%**
 Gradient Boosting | **88.53% / 96.49%**
 XGBoost | **95.08% / 94.737%**
 
-<h2>2) - User Prediction </h2>
+The next section being User Prediction.
 In this section, the user can use any model developed above to predict their status (High Risk / Low Risk) using their own values. (Either for Heart Attack or Breast Cancer)
 
+# Screenshots of the web app:
 
+<table style="width:100%">
+  <tr>
+    <th><img src="Results/Section 1 - Model.PNG" /></th>
+    <th><img src="Results/Section 2 - User (1).PNG" /></th>
+  </tr>
+  <tr>
+    <th><img src="Results/Section 2 - User (2).PNG" /></th>
+    <th><img src="Results/Section 2 - User (3).PNG" /></th>
+  </tr>
+ </table>
+ 
+ 
+ # Flow Chart
+ 
+ <table style="width:100%" align="center">
+  <tr>
+    <th><img src="Results/flow.png"height=700 width=250/></th>
+  </tr>
+ </table>
 
+#  Data Source
 
-<hr>
-
-<h1> Thank You! </h1>
-
-<hr>
-
-
-
+The models are trained using data from https://archive.ics.uci.edu/ml/index.php, particularly the Heart Attack Prediction and Breast Cancer (Wisconsin) datasets.
