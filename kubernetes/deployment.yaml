@@ -24,17 +24,3 @@ spec:
         - containerPort: 8501
         resources: {}
 status: {}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: lb-service
-  labels: 
-    app: lb-service
-spec:
-  type: LoadBalancer
-  ports:
-  - port: 8503
-    targetPort: 8501
-  selector:
-    app: mlalgoapp
