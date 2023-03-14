@@ -1,5 +1,4 @@
 [![Deploy to AWS ECS](https://github.com/bishal7679/Rancher-MLalgo4Health/actions/workflows/aws.yml/badge.svg?branch=main)](https://github.com/bishal7679/Rancher-MLalgo4Health/actions/workflows/aws.yml/badge.svg?branch=main)
-[![Push DockerHub](https://github.com/bishal7679/Rancher-MLalgo4Health/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/bishal7679/Rancher-MLalgo4Health/actions/workflows/docker-publish.yml/badge.svg?branch=main)
 
 # ML Analysis In Healthcare App
 ---
