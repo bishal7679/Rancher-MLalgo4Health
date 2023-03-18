@@ -6,7 +6,6 @@
 ![ranchertest](https://user-images.githubusercontent.com/70086051/224877287-efc89d4b-edd6-41c3-a897-b13a290ea83b.png)
 This is an interactive Machine Learning Web App "ML in Healthcare" developed using Python and StreamLit. It uses differnet ML algorithms to build powerful and accurate models to predict the risk (High / Low) of the user of having a Heart Attack or Breast Cancer based on the user's specific attributes like age, sex, heart rate, blood sugar, etc.
 
-The app can be visited at 
 
 # About the App
 The app has 2 major sections, first being Model Building.
@@ -155,6 +154,14 @@ Now access the loadbalancer external-ip on your browser to see the app is runnin
 ### Want to deploy on ECS cluster???
 
 - Use this ECR image `420235819919.dkr.ecr.us-east-1.amazonaws.com/mlalgo4health:latest`
+
+### Want to verify wheather the docker image mlalgo4health:2.0 is signed/verified ???
+
+- use the `cosing.pub` key to verify!
+
+![Mar-03-10-29](https://user-images.githubusercontent.com/70086051/226121929-8beee23c-2dc0-4a20-80ac-78c1f170ec60.png)
+
+
 
 ### Facing any Issues on Rancher agent disconnected or some error while importing Cluster???
 REF :- 
