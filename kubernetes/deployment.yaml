@@ -18,7 +18,8 @@ spec:
         app: mlalgoapp
     spec:
       containers:
-      - image: bishal7679/mlalgo4health:2.0
+      - image: 420235819919.dkr.ecr.us-east-1.amazonaws.com/mlalgo4health:latest
+        imagePullPolicy: IfNotPresent
         name: myhealthcareapp
         ports:
         - containerPort: 8501
