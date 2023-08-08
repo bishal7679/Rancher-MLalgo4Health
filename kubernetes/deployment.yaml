@@ -22,5 +22,4 @@ spec:
         name: myhealthcareapp
         ports:
         - containerPort: 8501
-        resources: {}
-status: {}
+          protocol: TCP
